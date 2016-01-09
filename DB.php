@@ -4,7 +4,7 @@
 		private $host   = "localhost";
 		private $db = "trello-clone";
 		private $user   = "root";
-		private $pass   = "znir54";
+		private $pass   = "";
 		private $conn;
 
 		public function __construct() {
