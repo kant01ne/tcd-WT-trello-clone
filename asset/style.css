@@ -1,0 +1,101 @@
+.tc-container-profile {
+	margin-top:-20px;
+	padding:5px 10px 5px 10%;
+	color:#ffffff;
+	background-color: rgb(176, 70, 50);
+	min-height:100%;
+}
+
+.tc-container-board {
+	margin-top:-20px;
+	padding:5px 10px 5px 10%;
+	color:#ffffff;
+	background-color: #0079BF;
+	min-height:100%;
+}
+
+
+.tc-board-title {
+	border-bottom: solid 1px #26297A;
+}
+
+.tc-main-title {
+	border-bottom: solid 1px #A83131;
+}
+
+.tc-board-card {
+	padding-top:2px;
+	padding-right:15px;
+	margin-right:15px;
+	margin-top:15px;
+	height:70px;
+	background-color: #992020;
+	border-radius: 3px;
+}
+.tc-board-card:hover {
+	background-color:#8C2323;
+	cursor:pointer;
+}
+
+.tc-board-card > h5 > a {
+	color:#fff;
+}
+
+.tc-board-card >  a {
+	color:#fff;
+}
+
+.tc-add-board {
+	margin-top:15px;
+	background-color:#CCCCCC;
+	height:70px;
+	color:#E8E8E8;
+	padding-top:22px;
+	padding-left:32px;
+}
+
+.tc-add-board:hover {
+	background-color:#BDBDBD;
+	cursor:pointer;
+}
+
+.tc-delete-board {
+	position:absolute;
+	right:-5%;
+}
+
+.tc-list {
+	padding:15px 15px 10px 15px;
+	background-color:#D6D6D6;
+	color:#000;
+	margin-right:10px;
+	border-radius: 5px;
+	border:solid 1px #BBB;
+}
+
+.tc-card {
+	padding:5px 5px 5px 5px;
+	background-color:#FFF;
+	color:#000;
+	margin-top:5px;
+	border-radius: 5px;
+	border:solid 1px #BBB;
+}
+
+
+.tc-card:hover {
+	background-color:#BDBDBD;
+	cursor:pointer;
+}
+
+.tc-remove-list {
+	position:absolute;
+	right:5%;
+	color:#AAAAAA;
+}
+
+.tc-remove-card {
+	position:absolute;
+	right:10%;
+	color:#AAAAAA;
+}
