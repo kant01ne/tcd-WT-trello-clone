@@ -12,6 +12,22 @@ The web application doesn't allow yet to switch a card from a list to another on
 I implemented a simple router (router.php) and the project is built upon a basic MVC structure made from scratch.
 
 
+## Install
+
+Clone the repository in your apache server folder :
+
+```shell
+$ git clone https://github.com/Skaelv/tcd-WT-trello-clone.git
+```
+
+... or download and export the zip file.
+
+Import trello-clone.sql file in your phpmyadmin interface.
+
+Change the mysql settings ($user and $pass var) to fit with your local mysql settings in 'DB.php' file.  
+
+Open 'http://localhost/tcd-WT-trello-clone/' in your browser.
+
 ## Entity Diagram Relationship
 
 ![](https://github.com/Skaelv/tcd-WT-trello-clone/raw/master/images/Entity_Diagram_Relationship.jpeg?raw=true)
