@@ -26,7 +26,9 @@ Import trello-clone.sql file in your phpmyadmin interface.
 
 Change the mysql settings ($user and $pass var) to fit with your local mysql settings in 'DB.php' file.  
 
-Open 'http://localhost/tcd-WT-trello-clone/' in your browser.
+Open 'http://localhost/tcd-WT-trello-clone/' in your browser. 
+
+Login using 'antoinek@tcd.ie' or create a new account.
 
 ## Entity Diagram Relationship
 
