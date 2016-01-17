@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le: Sam 09 Janvier 2016 à 19:24
+-- Généré le: Dim 17 Janvier 2016 à 13:44
 -- Version du serveur: 5.5.44-0ubuntu0.14.04.1
 -- Version de PHP: 5.5.9-1ubuntu4.13
 
@@ -34,20 +34,18 @@ CREATE TABLE IF NOT EXISTS `board` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`),
   KEY `owner_id` (`owner_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=16 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
 
 --
 -- Contenu de la table `board`
 --
 
 INSERT INTO `board` (`id`, `name`, `description`, `owner_id`) VALUES
-(1, 'web technologies project', 'Development of a PHP clone of trello', 1),
-(2, 'Personal Life', 'This is the trello I use for my personal life - to get my shit together if you prefer', 1),
-(7, 'qdsqd', NULL, 20),
-(8, 'qsd', NULL, 16),
-(11, 'New Board', NULL, 16),
+(1, 'web technologies project', 'PHP clone of trello', 1),
+(2, 'Personal Life', 'My personal life tasks', 1),
+(7, 'Another Board for another purpose', NULL, 20),
 (14, 'Web-Technologies-Project', NULL, 16),
-(15, 'sdqd', NULL, 16);
+(16, 'new Board', NULL, 21);
 
 -- --------------------------------------------------------
 
@@ -64,7 +62,7 @@ CREATE TABLE IF NOT EXISTS `card` (
   UNIQUE KEY `id` (`id`),
   KEY `list_id` (`list_id`),
   KEY `list_id_2` (`list_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=36 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=30 ;
 
 --
 -- Contenu de la table `card`
@@ -77,9 +75,7 @@ INSERT INTO `card` (`id`, `name`, `description`, `list_id`) VALUES
 (4, 'Finish my semester in TCD', '', 3),
 (8, 'Come back to Dublin', NULL, 1),
 (20, 'New card', NULL, 13),
-(22, 'Come back to Dublin', NULL, 13),
-(27, 'dqsds', NULL, 22),
-(28, 'sqdsqd', NULL, 22);
+(22, 'Come back to Dublin', NULL, 13);
 
 -- --------------------------------------------------------
 
@@ -95,7 +91,7 @@ CREATE TABLE IF NOT EXISTS `list` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`),
   KEY `board_id` (`board_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=30 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=27 ;
 
 --
 -- Contenu de la table `list`
@@ -106,10 +102,7 @@ INSERT INTO `list` (`id`, `name`, `description`, `board_id`) VALUES
 (2, 'In progress', '', 2),
 (3, 'Done', 'Yeah! High Five!', 2),
 (6, 'New List Test', NULL, 1),
-(13, 'New List Test', NULL, 14),
-(22, 'sqdqsd', NULL, 8),
-(24, 'qsdsd', NULL, 8),
-(25, 'sqdqsd', NULL, 8);
+(13, 'New List Test', NULL, 14);
 
 -- --------------------------------------------------------
 
@@ -125,17 +118,18 @@ CREATE TABLE IF NOT EXISTS `user` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`),
   UNIQUE KEY `email` (`email`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=21 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=22 ;
 
 --
 -- Contenu de la table `user`
 --
 
 INSERT INTO `user` (`id`, `firstname`, `lastname`, `email`) VALUES
-(1, 'Kevin', 'Antoine', 'antoink@tcd.ie'),
+(1, 'Kevin', 'Antoine', 'antoinek@tcd.ie'),
 (2, 'Jean', 'Jean', 'jean@tcd.ie'),
 (16, 'kevin', 'antoine', 'kevin.antoine@insa-lyon.fr'),
-(20, 'kekzr', 'kllksq', 'qsdqsd@gmail.com');
+(20, 'kekzr', 'kllksq', 'qsdqsd@gmail.com'),
+(21, 'kevin', 'antoine', 'yop@yopmail.com');
 
 -- --------------------------------------------------------
 
